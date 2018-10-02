@@ -8,6 +8,8 @@ public class Opdracht_2 {
 
                 System.out.println("Inkoopprijs: ");
                 float inkoopPrijs = input.nextFloat();
+                float winst = 1.06;
+                float btw = 1.21;
 
                 System.out.println("Winstmarge (in %): ");
                 int winstmarge = input.nextInt() / 100;
@@ -15,7 +17,7 @@ public class Opdracht_2 {
                 float verkoopPrijs = inkoopPrijs + (inkoopPrijs * winstmarge);
 
                 System.out.println("Verkoopprijs exclusief BTW : "+ verkoopPrijs +"\n" +
-                        "Verkoopprijs inclusief 6% BTW: "+ verkoopPrijs *1.06+"\n" +
-                        "Verkoopprijs inclusief 21% BTW: "+verkoopPrijs *1.21 +"\n");
+                        "Verkoopprijs inclusief 6% BTW: "+ verkoopPrijs *winst+"\n" +
+                        "Verkoopprijs inclusief 21% BTW: "+verkoopPrijs *btw+"\n");
             }
         }
